@@ -21,7 +21,7 @@ function Card() {
           }).then(() => {
             return setTimeout(() => {
               setIsFlipped(!isFlipped);
-            }, 1000) 
+            }, 100) 
           });
       }
 
