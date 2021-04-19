@@ -4,6 +4,7 @@ import { ThemeProvider } from "@material-ui/core";
 import theme from "../styles/theme/theme";
 import oracle from "../public/img/oracle_alfa.png";
 import Card from "../components/Card";
+import Cafecito from "../components/Cafecito";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
           <Card/>
         </header>
         <footer className="footer">
-          
+          <Cafecito/>
         </footer>
       </ThemeProvider>
       </div>
