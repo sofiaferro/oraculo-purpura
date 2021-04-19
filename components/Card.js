@@ -22,7 +22,7 @@ function Card() {
       }
 
       function getCardInfo(card) {
-        const img = require(`../img/cards/${card.img}`);
+        const img = require(`../public/img/cards/${card.img}`);
         setImage(img.default);
         const orientation = Math.floor(Math.random() * 2);
         orientation === 0 ? setImageOr("up") : setImageOr("down");
