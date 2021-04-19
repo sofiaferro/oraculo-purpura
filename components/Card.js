@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-//import back from "/img/back.jpg";
 import ReactCardFlip from "react-card-flip";
-
-const back = "/img/back.jpg"
+const back = "/img/back.jpg";
 
 function Card() {
   const [name, setName] = useState("");
@@ -24,7 +22,7 @@ function Card() {
       }
 
       function getCardInfo(card) {
-        const img = `/img/cards/${card.img}`
+        const img = `/img/cards/${card.img}`;
         setImage(img);
         const orientation = Math.floor(Math.random() * 2);
         orientation === 0 ? setImageOr("up") : setImageOr("down");
@@ -32,12 +30,10 @@ function Card() {
           ? setMessage(card.meaning_up)
           : setMessage(card.meaning_rev);
         setName(card.name);
-        if (image) {
-          setIsFlipped((isFlipped) => !isFlipped);
-        }
+        setIsFlipped(!isFlipped);
       }
-      getCards();
     }
+    getCards();
   }, [loading]);
 
   function handleGetCard() {
@@ -45,7 +41,7 @@ function Card() {
   }
 
   function handleBackToDeck() {
-    setImage(back)
+    setImage(back);
     setIsFlipped(!isFlipped);
     setMessage(() => message === "");
     setName(() => name === "");
