@@ -5,7 +5,7 @@ const back = "/img/back.jpg";
 function Card() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
-  const [image, setImage] = useState();
+  const [image, setImage] = useState("");
   const [imageOr, setImageOr] = useState("");
   const [loading, setLoading] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -18,7 +18,9 @@ function Card() {
           .then((res) => res.json())
           .then((cardPeck) => {
             return getCardInfo(cardPeck.cards[0]);
-          })
+          }).then(() => {
+            return setIsFlipped(!isFlipped);
+          });
       }
 
       function getCardInfo(card) {
@@ -30,8 +32,6 @@ function Card() {
           ? setMessage(card.meaning_up)
           : setMessage(card.meaning_rev);
         setName(card.name);
-        return setIsFlipped(!isFlipped);
-
       }
       getCards();
     }
