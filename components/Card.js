@@ -12,12 +12,12 @@ function Card() {
 
   useEffect(() => {
     if (loading !== 0) {
-      setImage(back);
       async function getCards() {
         const id = Math.floor(Math.random() * 78) + 1;
         fetch(`https://tarot-purpura-api.vercel.app/cards/${id}.json`)
           .then((res) => res.json())
           .then((cardPeck) => {
+            setImage(back)
             return getCardInfo(cardPeck.cards[0]);
           })
           .then(() => setIsFlipped(!isFlipped));
