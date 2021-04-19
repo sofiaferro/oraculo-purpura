@@ -18,25 +18,23 @@ function Card() {
           .then((res) => res.json())
           .then((cardPeck) => {
             return getCardInfo(cardPeck.cards[0]);
+          })
+          .then(() => {
+            return setIsFlipped(!isFlipped);
           });
       }
 
       function getCardInfo(card) {
         const orientation = Math.floor(Math.random() * 2);
-        try {
-          const img = `/img/cards/${card.img}`;
-          setImage(img);
-          orientation === 0 ? setImageOr("up") : setImageOr("down");
-          orientation === 0
-            ? setMessage(card.meaning_up)
-            : setMessage(card.meaning_rev);
-          setName(card.name);
-        } catch (e) {
-          console.log(e);
-        } finally {
-          setIsFlipped(!isFlipped);
-        }
+        const img = `/img/cards/${card.img}`;
+        setImage(img);
+        orientation === 0 ? setImageOr("up") : setImageOr("down");
+        orientation === 0
+          ? setMessage(card.meaning_up)
+          : setMessage(card.meaning_rev);
+        setName(card.name)
       }
+
       getCards();
     }
   }, [loading]);
