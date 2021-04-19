@@ -19,10 +19,13 @@ function Card() {
           .then((cardPeck) => {
             return getCardInfo(cardPeck.cards[0]);
           })
-          .then(() => setIsFlipped(!isFlipped));
+          .then(() => {
+            return setIsFlipped(!isFlipped);
+          });
       }
 
       function getCardInfo(card) {
+        setImage(back)
         const img = `/img/cards/${card.img}`;
         setImage(img);
         const orientation = Math.floor(Math.random() * 2);
