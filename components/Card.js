@@ -32,7 +32,9 @@ function Card() {
           ? setMessage(card.meaning_up)
           : setMessage(card.meaning_rev);
         setName(card.name);
-        setIsFlipped((isFlipped) => !isFlipped);
+        if (image) {
+          setIsFlipped((isFlipped) => !isFlipped);
+        }
       }
       getCards();
     }
