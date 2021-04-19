@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import "../styles/App.css";
 import { ThemeProvider } from "@material-ui/core";
 import theme from "../styles/theme/theme";
 import oracle from "../public/img/oracle_alfa.png";
