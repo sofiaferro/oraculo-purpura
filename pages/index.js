@@ -3,6 +3,7 @@ import "../styles/App.css";
 import { ThemeProvider } from "@material-ui/core";
 import theme from "../styles/theme/theme";
 import oracle from "../public/img/oracle_alfa.png";
+import Card from "../components/Card";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <ThemeProvider theme={theme}>
       <img alt="" src={oracle} className="oracle" />
         <header className="App-content">
-          
+          <Card/>
         </header>
         <footer className="footer">
           
