@@ -1,21 +1,23 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { ThemeProvider } from "@material-ui/core";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Púrpura</title>
+        <link rel="icon" href="favicon.png" />
       </Head>
-
-      <main>
-
-      </main>
-
-      <footer>
-
-      </footer>
-    </div>
+      <div className="App">
+      <ThemeProvider>
+        <header className="App-content">
+          
+        </header>
+        <footer className="footer">
+          
+        </footer>
+      </ThemeProvider>
+      </div>
+      </>
   )
 }
