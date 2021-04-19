@@ -1,9 +1,11 @@
 import Head from 'next/head'
 import { ThemeProvider } from "@material-ui/core";
 import theme from "../styles/theme/theme";
-import oracle from "../public/img/oracle_alfa.png";
+//import oracle from "/img/oracle_alfa.png";
 import Card from "../components/Card";
 import Cafecito from "../components/Cafecito";
+
+const oracle = "/img/oracle_alfa.png"
 
 export default function Home() {
   return (

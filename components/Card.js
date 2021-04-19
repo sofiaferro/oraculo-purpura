@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
-import back from "../public/img/back.jpg";
+//import back from "/img/back.jpg";
 import ReactCardFlip from "react-card-flip";
+
+const back = "/img/back.jpg"
 
 function Card() {
   const [name, setName] = useState("");
@@ -22,8 +24,8 @@ function Card() {
       }
 
       function getCardInfo(card) {
-        const img = require(`../public/img/cards/${card.img}`);
-        setImage(img.default);
+        const img = `/img/cards/${card.img}`
+        setImage(img);
         const orientation = Math.floor(Math.random() * 2);
         orientation === 0 ? setImageOr("up") : setImageOr("down");
         orientation === 0
