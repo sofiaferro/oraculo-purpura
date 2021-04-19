@@ -47,6 +47,7 @@ function Card() {
   }
 
   function handleBackToDeck() {
+    setImage(back)
     setIsFlipped(!isFlipped);
     setMessage(() => message === "");
     setName(() => name === "");
