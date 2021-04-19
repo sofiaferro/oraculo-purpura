@@ -18,9 +18,10 @@ function Card() {
           .then((res) => res.json())
           .then((cardPeck) => {
             return getCardInfo(cardPeck.cards[0]);
-          })
-          .then(() => {
-            return setIsFlipped(!isFlipped);
+          }).then(() => {
+            return setTimeout(() => {
+              setIsFlipped(!isFlipped);
+            }, 1000) 
           });
       }
 
