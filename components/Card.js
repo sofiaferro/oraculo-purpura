@@ -37,6 +37,9 @@ function Card() {
   }, [loading]);
 
   function handleGetCard() {
+    if (loading !== 0) {
+      setImage(back);
+    }
     setLoading(!loading);
   }
 
