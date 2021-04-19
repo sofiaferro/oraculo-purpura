@@ -1,4 +1,3 @@
-import "../styles/Card.css";
 
 function Cafecito() {
   return (

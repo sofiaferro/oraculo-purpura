@@ -1,4 +1,3 @@
-import "../styles/Card.css";
 import { useState, useEffect } from "react";
 import back from "../public/img/back.jpg";
 import ReactCardFlip from "react-card-flip";
