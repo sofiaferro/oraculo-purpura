@@ -32,9 +32,9 @@ function Card() {
           ? setMessage(card.meaning_up)
           : setMessage(card.meaning_rev);
         setName(card.name);
+        setIsFlipped((isFlipped) => !isFlipped);
       }
       getCards();
-      setIsFlipped((isFlipped) => !isFlipped);
     }
   }, [loading]);
 
@@ -43,8 +43,8 @@ function Card() {
   }
 
   function handleBackToDeck() {
-    setImage(back)
     setIsFlipped(!isFlipped);
+    setImage(back)
     setMessage(() => message === "");
     setName(() => name === "");
   }
