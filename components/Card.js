@@ -18,7 +18,8 @@ function Card() {
           .then((res) => res.json())
           .then((cardPeck) => {
             return getCardInfo(cardPeck.cards[0]);
-          });
+          })
+          .then(() => setIsFlipped(!isFlipped));
       }
 
       function getCardInfo(card) {
@@ -30,10 +31,9 @@ function Card() {
           ? setMessage(card.meaning_up)
           : setMessage(card.meaning_rev);
         setName(card.name);
-        setIsFlipped(!isFlipped);
       }
+      getCards();
     }
-    getCards();
   }, [loading]);
 
   function handleGetCard() {
@@ -41,7 +41,6 @@ function Card() {
   }
 
   function handleBackToDeck() {
-    setImage(back);
     setIsFlipped(!isFlipped);
     setMessage(() => message === "");
     setName(() => name === "");
