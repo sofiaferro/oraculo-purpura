@@ -25,7 +25,6 @@ function Card() {
       }
 
       function getCardInfo(card) {
-        setImage(back)
         const img = `/img/cards/${card.img}`;
         setImage(img);
         const orientation = Math.floor(Math.random() * 2);
@@ -43,7 +42,7 @@ function Card() {
     if (loading !== 0) {
       setImage(back);
     }
-    setLoading(!loading);
+    setLoading((loading) => loading + 1);
   }
 
   function handleBackToDeck() {
