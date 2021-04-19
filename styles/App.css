@@ -2,12 +2,12 @@ body {
   padding: 0;
   margin: 0;
   border: 0;
+  background-image: url(../public/img/background.png);
 }
 
 .App {
   text-align: center;
   height: 100vh;
-  background-image: url(../public/img/background.png);
 }
 
 .App-content {
@@ -20,6 +20,7 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
+  top: 35px;
   width: 100%;
 }
