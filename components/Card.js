@@ -47,9 +47,6 @@ function Card() {
       .then((cardPeck) => {
         return getCardInfo(cardPeck.cards[0]);
       })
-      .then(() => {
-        return setIsFlipped(!isFlipped);
-      });
   }
 
   function getCardInfo(card) {
@@ -57,6 +54,7 @@ function Card() {
     const img = `/img/cards/${card.img}`;
     setImage(img);
     orientation === 0 ? setImageOr("up") : setImageOr("down");
+    setIsFlipped(!isFlipped);
     orientation === 0
       ? setMessage(card.meaning_up)
       : setMessage(card.meaning_rev);
