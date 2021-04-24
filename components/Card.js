@@ -10,7 +10,7 @@ function Card() {
   const [loading, setLoading] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
-  useEffect(() => {
+/*   useEffect(() => {
     if (loading !== 0) {
       async function getCards() {
         const id = Math.floor(Math.random() * 78) + 1;
@@ -37,17 +37,38 @@ function Card() {
 
       getCards();
     }
-  }, [loading]);
+  }, [loading]); */
 
+  function getCards() {
+    const id = Math.floor(Math.random() * 78) + 1;
+    console.log(`card ${id}`)
+    fetch(`https://tarot-purpura-api.vercel.app/cards/${id}.json`)
+      .then((res) => res.json())
+      .then((cardPeck) => {
+        return getCardInfo(cardPeck.cards[0]);
+      })
+      .then(() => {
+        return setIsFlipped(!isFlipped);
+      });
+  }
+
+  function getCardInfo(card) {
+    const orientation = Math.floor(Math.random() * 2);
+    const img = `/img/cards/${card.img}`;
+    setImage(img);
+    orientation === 0 ? setImageOr("up") : setImageOr("down");
+    orientation === 0
+      ? setMessage(card.meaning_up)
+      : setMessage(card.meaning_rev);
+    setName(card.name)
+  }
+
+  
   function handleGetCard() {
-    if (loading !== 0) {
-      setImage(back);
-    }
-    setLoading((loading) => loading + 1);
+    getCards();
   }
 
   function handleBackToDeck() {
-    setImage(back)
     setIsFlipped(!isFlipped);
     setMessage(() => message === "");
     setName(() => name === "");
