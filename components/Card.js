@@ -54,11 +54,11 @@ function Card() {
     const img = `/img/cards/${card.img}`;
     setImage(img);
     orientation === 0 ? setImageOr("up") : setImageOr("down");
-    setIsFlipped(!isFlipped);
     orientation === 0
-      ? setMessage(card.meaning_up)
-      : setMessage(card.meaning_rev);
+    ? setMessage(card.meaning_up)
+    : setMessage(card.meaning_rev);
     setName(card.name)
+    setIsFlipped(!isFlipped);
   }
 
   
