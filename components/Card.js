@@ -77,6 +77,7 @@ function Card() {
   }
 
   function handleBackToDeck() {
+    setCard(cardInitState)
     setIsFlipped(() => !isFlipped);
   }
 
