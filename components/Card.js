@@ -26,11 +26,10 @@ function Card() {
 
   function handleGetCard() {
     getCard();
-    console.log(card);
   }
 
   function handleBackToDeck() {
-    setIsFlipped(() => !isFlipped)
+    setIsFlipped(() => !isFlipped);
   }
 
   return (
@@ -51,7 +50,11 @@ function Card() {
       </ReactCardFlip>
       <h4 className="name">{isFlipped ? card.name : ""}</h4>
       <p className="message">
-        {isFlipped ? (card.meaning === "rev" ? card.meaning_rev : card.meaning_up) : ""}
+        {isFlipped
+          ? card.meaning === "rev"
+            ? card.meaning_rev
+            : card.meaning_up
+          : ""}
       </p>
     </div>
   );
