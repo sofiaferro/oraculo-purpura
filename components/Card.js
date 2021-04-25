@@ -23,7 +23,7 @@ function Card() {
     setCard(tarotPeck[id]);
     setTimeout(() => {
       setIsFlipped(() => !isFlipped);
-    }, 300);
+    }, 400);
   }
 
   function handleGetCard() {
