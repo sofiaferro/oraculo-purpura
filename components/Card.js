@@ -21,9 +21,9 @@ function Card() {
     const orientation = Math.floor(Math.random() * 2);
     orientation === 0 ? setMeaning("up") : setMeaning("rev");
     setCard(tarotPeck[id]);
-    if (card) {
+    setTimeout(() => {
       setIsFlipped(() => !isFlipped);
-    }
+    }, 300);
   }
 
   function handleGetCard() {
