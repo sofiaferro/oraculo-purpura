@@ -17,6 +17,7 @@ function Card() {
   }, []);
 
   function getCard() {
+    setCard({})
     const id = Math.floor(Math.random() * 78);
     const orientation = Math.floor(Math.random() * 2);
     orientation === 0 ? setMeaning("up") : setMeaning("rev");
@@ -25,12 +26,12 @@ function Card() {
   }
 
   function handleGetCard() {
+    //setCard({})
     getCard();
     console.log(card);
   }
 
   function handleBackToDeck() {
-    setCard({})
     setIsFlipped(() => !isFlipped)
   }
 
@@ -50,9 +51,9 @@ function Card() {
           onClick={() => handleBackToDeck()}
         />
       </ReactCardFlip>
-      <h4 className="name">{card.name}</h4>
+      <h4 className="name">{isFlipped ? card.name : ""}</h4>
       <p className="message">
-        {card.meaning === "rev" ? card.meaning_rev : card.meaning_up}
+        {isFlipped ? (card.meaning === "rev" ? card.meaning_rev : card.meaning_up) : ""}
       </p>
     </div>
   );
