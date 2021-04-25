@@ -27,9 +27,9 @@ function Card() {
   }, []);
 
   function getCard() {
-    setCard(cardInitState)
     const id = Math.floor(Math.random() * 78);
     setCard(tarotPeck[id]);
+    setIsFlipped(()=> !isFlipped)
   }
   function handleGetCard() {
     getCard();
