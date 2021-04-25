@@ -23,7 +23,9 @@ function Card() {
       .then((res) => res.json())
       .then((cardPeck) => {
         return setTarotPeck(cardPeck.cards);
-      });
+      }).then(()=> {
+        return setIsFlipped(() => !isFlipped)
+      })
   }, []);
 
   function getCard() {
@@ -34,7 +36,7 @@ function Card() {
   function handleGetCard() {
     getCard();
     console.log(card)
-    setIsFlipped(() => !isFlipped)
+
   }
 
   function handleBackToDeck() {
