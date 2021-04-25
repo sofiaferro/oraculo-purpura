@@ -21,9 +21,10 @@ function Card() {
     const orientation = Math.floor(Math.random() * 2);
     orientation === 0 ? setMeaning("up") : setMeaning("rev");
     setCard(tarotPeck[id]);
-    setTimeout(() => {
+    if (card) {
       setIsFlipped(() => !isFlipped);
-    }, 500);
+      console.log(meaning)
+    }
   }
 
   function handleGetCard() {
@@ -46,14 +47,14 @@ function Card() {
         <img
           alt=""
           src={`/img/cards/${card.img}`}
-          className={card.meaning === "rev" ? "reversed card-img" : "card-img"}
+          className={meaning === "rev" ? "reversed card-img" : "card-img"}
           onClick={() => handleBackToDeck()}
         />
       </ReactCardFlip>
       <h4 className="name">{isFlipped ? card.name : ""}</h4>
       <p className="message">
         {isFlipped
-          ? card.meaning === "rev"
+          ? meaning === "rev"
             ? card.meaning_rev
             : card.meaning_up
           : ""}
