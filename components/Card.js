@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect} from "react";
 import ReactCardFlip from "react-card-flip";
 const back = "/img/back.jpg";
 
@@ -23,7 +23,6 @@ function Card() {
     setCard(tarotPeck[id]);
     if (card) {
       setIsFlipped(() => !isFlipped);
-      console.log(meaning)
     }
   }
 
