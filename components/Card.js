@@ -47,7 +47,7 @@ function Card() {
           />
           <img
             alt=""
-            src={isFlipped ? `/img/cards/${card.img}` : ""}
+            src={`/img/cards/${card.img}`}
             className={meaning === "rev" ? "reversed card-img" : "card-img"}
             onClick={() => handleBackToDeck()}
           />
