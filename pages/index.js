@@ -2,7 +2,6 @@ import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core";
 import theme from "../styles/theme/theme";
 import Card from "../components/Card";
-import Cafecito from "../components/Cafecito";
 const oracle = "/img/oracle_alfa.png";
 
 export default function Home() {
@@ -18,9 +17,6 @@ export default function Home() {
           <header className="App-content">
             <Card />
           </header>
-          <footer className="footer">
-            <Cafecito />
-          </footer>
         </ThemeProvider>
       </div>
     </>

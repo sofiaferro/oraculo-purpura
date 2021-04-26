@@ -1,5 +1,6 @@
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import ReactCardFlip from "react-card-flip";
+import Cafecito from "./Cafecito";
 const back = "/img/back.jpg";
 
 function Card() {
@@ -35,30 +36,39 @@ function Card() {
   }
 
   return (
-    <div className="card-container">
-      <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
-        <img
-          alt=""
-          src={back}
-          className="card-img"
-          onClick={() => handleGetCard()}
-        />
-        <img
-          alt=""
-          src={`/img/cards/${card.img}`}
-          className={meaning === "rev" ? "reversed card-img" : "card-img"}
-          onClick={() => handleBackToDeck()}
-        />
-      </ReactCardFlip>
-      <h4 className="name">{isFlipped ? card.name : ""}</h4>
-      <p className="message">
-        {isFlipped
-          ? meaning === "rev"
-            ? card.meaning_rev
-            : card.meaning_up
-          : ""}
-      </p>
-    </div>
+    <>
+      <div className="card-container">
+        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+          <img
+            alt=""
+            src={back}
+            className="card-img"
+            onClick={() => handleGetCard()}
+          />
+          <img
+            alt=""
+            src={`/img/cards/${card.img}`}
+            className={meaning === "rev" ? "reversed card-img" : "card-img"}
+            onClick={() => handleBackToDeck()}
+          />
+        </ReactCardFlip>
+        <h4 className="name">{isFlipped ? card.name : ""}</h4>
+        <p className="message">
+          {isFlipped
+            ? meaning === "rev"
+              ? card.meaning_rev
+              : card.meaning_up
+            : ""}
+        </p>
+      </div>
+      {isFlipped ? (
+        <footer className="footer">
+          <Cafecito />
+        </footer>
+      ) : (
+        ""
+      )}
+    </>
   );
 }
 
