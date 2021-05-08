@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
+import { gsap, TweenMax} from 'gsap';
 import ReactCardFlip from "react-card-flip";
 import Cafecito from "./Cafecito";
 const back = "/img/back.jpg";
@@ -8,6 +9,9 @@ function Card() {
   const [card, setCard] = useState({});
   const [meaning, setMeaning] = useState("");
   const [isFlipped, setIsFlipped] = useState(false);
+  const name = useRef(null)
+  const message = useRef(null)
+  const cafecito = useRef(null)
 
   useEffect(() => {
     fetch("https://tarot-purpura-api.vercel.app/cards.json")
@@ -24,7 +28,7 @@ function Card() {
     setCard(tarotPeck[id]);
     setTimeout(() => {
       setIsFlipped(() => !isFlipped);
-    }, 500);
+    }, 600);
   }
 
   function handleGetCard() {
@@ -34,6 +38,15 @@ function Card() {
   function handleBackToDeck() {
     setIsFlipped(() => !isFlipped);
   }
+
+useMemo(() => {
+    TweenMax.fromTo(name.current, 2, {
+opacity: 0,
+    }, {opacity: 1})
+    TweenMax.fromTo(message.current, 2, {
+opacity: 0,
+    }, {opacity: 1})
+}, [isFlipped])
 
   return (
     <>
@@ -47,13 +60,13 @@ function Card() {
           />
           <img
             alt=""
-            src={`/img/cards/${card.img}`}
+            src={card.img && `/img/cards/${card.img}`}
             className={meaning === "rev" ? "reversed card-img" : "card-img"}
             onClick={() => handleBackToDeck()}
           />
         </ReactCardFlip>
-        <h4 className="name">{isFlipped ? card.name : ""}</h4>
-        <p className="message">
+        <h4 ref={name} className="name">{isFlipped && card.name}</h4>
+        <p ref={message} className="message">
           {isFlipped
             ? meaning === "rev"
               ? card.meaning_rev
@@ -61,12 +74,10 @@ function Card() {
             : ""}
         </p>
       </div>
-      {isFlipped ? (
-        <footer className="footer">
+      {isFlipped && (
+        <footer ref={cafecito} className="footer">
           <Cafecito />
         </footer>
-      ) : (
-        ""
       )}
     </>
   );

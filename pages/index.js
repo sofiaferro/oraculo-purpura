@@ -2,7 +2,6 @@ import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core";
 import theme from "../styles/theme/theme";
 import Card from "../components/Card";
-const oracle = "/img/oracle_alfa.png";
 
 export default function Home() {
   return (
@@ -13,7 +12,7 @@ export default function Home() {
       </Head>
       <div className="App">
         <ThemeProvider theme={theme}>
-          <img alt="" src={oracle} className="oracle" />
+          <img alt="" src="/img/oracle_alfa.png" className="oracle" />
           <header className="App-content">
             <Card />
           </header>
