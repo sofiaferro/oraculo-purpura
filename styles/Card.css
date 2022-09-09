@@ -2,10 +2,19 @@
 .reversed {
   transform: rotate(180deg);
 }
+
+.container {
+  width: 300px;
+  position: absolute;
+  top: 35em;
+  left: 25%;
+}
   
 .card-container {
-  margin-top: -480px;
-  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
   
 .card-img {
@@ -13,15 +22,26 @@
   border-radius: 10px;
 }
   
-.oracle {
+.background {
   width: 300px;
-  margin-top: 30px;
+  position: absolute;
+  top: 25%;
+  left: 25%;
 }
-  
+
 .name {
-  margin-top: 5px;
+  font-size: 1.5em;
+  font-family: 'MedievalSharp', cursive;
 }
 
 .message {
-  margin-top: 80px;
+  padding-bottom: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.react-card-flip {
+  width: 300px;
+  position: absolute;
+  top: 13em;
+  left: 25%;
 }

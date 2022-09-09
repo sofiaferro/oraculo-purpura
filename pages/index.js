@@ -9,13 +9,15 @@ export default function Home() {
       <Head>
         <title>Púrpura</title>
         <link rel="icon" href="favicon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Open+Sans&display=swap" rel="stylesheet"/>
       </Head>
       <div className="App">
         <ThemeProvider theme={theme}>
-          <img alt="" src="/img/oracle_alfa.png" className="oracle" />
-          <header className="App-content">
+          <div className="App-content">
             <Card />
-          </header>
+          </div>
         </ThemeProvider>
       </div>
     </>

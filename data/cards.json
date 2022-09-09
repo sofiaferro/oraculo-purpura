@@ -1,0 +1,709 @@
+{
+    "cards": [
+        {
+            "id": 1,
+            "name": "El Mago",
+            "type": "major",
+            "description": "Este arcano nos devela la necesidad de llevar a cabo una acción a través de nuestros deseos, teniendo en cuenta nuestras cualidades y fuerza de voluntad.",
+            "meaning_up": "Confiá en tus habilidades para iniciar cualquier objetivo que te propongas conectando con tus deseos de materializar una nueva realidad. ¿Qué te entusiasma?",
+            "meaning_rev": "No esperes a que las cosas simplemente sucedan cuando está en vos la posibilidad de actuar. ¿Qué te traba?",
+            "img": "major1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "La Papisa",
+            "type": "major",
+            "description": "Ella actúa desde la concentración de energía, nos pide un momento de introspección para poder actuar desde los deseos más íntimos.",
+            "meaning_up": "Buscá un espacio en el que puedas reposar tus emociones para conectar con tu intuición a través de tus propias experiencias. ¿Qué estás sintiendo?",
+            "meaning_rev": "No te cierres a la posibilidad de conectar con los demás, de todos podemos aprender si estamos dispuestos a escuchar y observar. ¿A qué te estás aferrando?",
+            "img": "major2.jpg"
+        },
+        {
+            "id": 3,
+            "name": "La Emperatriz",
+            "type": "major",
+            "description": "Ella nos conecta con una energía inconsciente propia de la inexperiencia, su fe nace desde el corazón con gran entusiasmo y valentía.",
+            "meaning_up": "Tus impulsos afloran con fuerza cuando tu creatividad emerge de tu entusiasmo y vitalidad. Disfrutá el proceso. ¿Te aporta eso alegría y goce?",
+            "meaning_rev": "Fortalecé las bases de tus ideas para que todo lo que proyectes crezca con gran impulso. ¿Son reales tus metas?",
+            "img": "major3.jpg"
+        },
+        {
+            "id": 4,
+            "name": "El Emperador",
+            "type": "major",
+            "description": "Él tiene la virtud de conquistar a través de su seguridad, dejándose guiar por sus emociones para establecer sus propósitos.",
+            "meaning_up": "Fortalecé tu seguridad haciendo pie en tus habilidades para conectar con tu estabilidad material y emocional. ¿Reconocés tu valor?",
+            "meaning_rev": "No pierdas el foco en tus objetivos, considerá los cambios que sean necesarios para concretarlos sin caer en la frustración. ¿Cuáles son tus miedos?",
+            "img": "major4.jpg"
+        },
+        {
+            "id": 5,
+            "name": "El Papa",
+            "type": "major",
+            "description": "Él tiene una conexión con la sabiduría a través de la espiritualidad y la experiencia, propone un salto de fe para conectar con nuevas necesidades.",
+            "meaning_up": "Tomate un tiempo para hacer foco en esos pensamientos que aparecen una y otra vez de manera inconsciente. ¿Qué te frena?",
+            "meaning_rev": "No permitas que tus emociones sean reprimidas, están ahí para ser validadas y formar parte de tu proceso evolutivo. ¿Qué estás evadiendo?",
+            "img": "major5.jpg"
+        },
+        {
+            "id": 6,
+            "name": "El Enamorado",
+            "type": "major",
+            "description": "Este arcano se encuentra en un proceso largo y tedioso: la búsqueda de encontrarse a sí mismo para conectar con sus propias necesidades.",
+            "meaning_up": "Date la oportunidad de abrirte a nuevas necesidades, confá en tu instinto. Tu corazón sabe lo que necesita. ¿Te estás teniendo en cuenta?",
+            "meaning_rev": "Tomá conciencia acerca de tus necesidades a través de tus emociones sin esperar una validación externa, el amor está en todo lo que hagamos desde el corazón. ¿Te amás?",
+            "img": "major6.jpg"
+        },
+        {
+            "id": 7,
+            "name": "El Carro",
+            "type": "major",
+            "description": "Este arcano necesita estar comprometido con lo que desea para actuar con potencia en la consecución de sus objetivos.",
+            "meaning_up": "Los deseos son como chispas que nos impulsan a ir detrás de cada objetivo, tomá valor a través de tu fortaleza para materializar lo que te propongas. ¿Cuál es tu meta?",
+            "meaning_rev": "Solo podremos construir una nueva realidad cuando estemos dispuestos a ver de manera objetiva la totalidad de cada situación. ¿Qué estás escondiendo?",
+            "img": "major7.jpg"
+        },
+        {
+            "id": 8,
+            "name": "La Justicia",
+            "type": "major",
+            "description": "Ella parte de la claridad de su mente buscando el equilibrio que la mantenga en su centro.",
+            "meaning_up": "Buscá tu felicidad lejos de toda imposición, los límites sanos nos ayudan a fortalecer nuestro amor propio desde la valoración. ¿Reconocés tus necesidades?",
+            "meaning_rev": "Los errores son parte del aprendizaje, no busques cumplir con todo a la perfección, aceptá la colaboración externa. ¿Reconocés tus límites?",
+            "img": "major8.jpg"
+        },
+        {
+            "id": 9,
+            "name": "El Ermitaño",
+            "type": "major",
+            "description": "Este arquetipo representa a una persona adulta y sabia, que adquiere conocimientos a través de sus experiencias de vida.",
+            "meaning_up": "Quizás este sea uno de esos momentos en los que necesites encontrarte a través de tus procesos personales. ¿Qué te incomoda?",
+            "meaning_rev": "Animarnos a procesar lo que nos atraviesa internamente nos ayuda a descubrir lo que necesitamos para nuestra evolución. ¿Cuál es tu angustia?",
+            "img": "major9.jpg"
+        },
+        {
+            "id": 10,
+            "name": "La Rueda de la Fortuna",
+            "type": "major",
+            "description": "Esta rueda nos remite a los ciclos y al movimiento constante, necesarios para nuestra evolución.",
+            "meaning_up": "Cada ciclo es importante y naturalmente necesario para nuestro crecimiento, lo que hoy puede ser complejo mañana será un gran aprendizaje. ¿Te animás al cambio?",
+            "meaning_rev": "Que la rigidez de tus emociones no te quite perspectiva para lograr el equilibrio que estás buscando. ¿Qué te desborda?",
+            "img": "major10.jpg"
+        },
+        {
+            "id": 11,
+            "name": "La Fuerza",
+            "type": "major",
+            "description": "Ella nos llama a la acción, a reconocer nuestra potencia y capacidad para transformar una dificultad en un gran desafío.",
+            "meaning_up": "Confiá en tus instintos y en tu capacidad para cumplir con todo lo que te propongas, sin dejar de apoyarte tanto en tus defectos como en tus virtudes. ¿Te aceptás tal cual sos?",
+            "meaning_rev": "El carácter es fundamental para tomar acción o expresar nuestra personalidad, transforma nuestras experiencias en positivas o negativas. ¿Sos consciente de tu poder?",
+            "img": "major11.jpg"
+        },
+        {
+            "id": 12,
+            "name": "El Colgado",
+            "type": "major",
+            "description": "Él nos habla de un momento de reposo e introspección, pues necesita recluirse en su interior para poder tomar mayor perspectiva frente a una situación.",
+            "meaning_up": "Permitite este momento para procesar cada situación y madurar debidamente cualquier elección antes de avanzar. ¿Qué necesita tu atención?",
+            "meaning_rev": "Concentrate en encontrar una nueva perspectiva que te permita seguir avanzando sin depender de los demás. ¿Qué te cuesta aceptar?",
+            "img": "major12.jpg"
+        },
+        {
+            "id": 13,
+            "name": "El Arcano sin nombre",
+            "type": "major",
+            "description": "Este arcano está asociado a una energía liberadora a través del cambio y la transmutación, necesita expresar hacia afuera para superar el dolor.",
+            "meaning_up": "Todo cambio es parte de un proceso evolutivo, seguro este sea un buen momento para encontrar esa transformación que estás buscando. ¿Qué quisieras cambiar?",
+            "meaning_rev": "Muchas veces por miedo a tomar una decisión nos quedamos estancados en situaciones dolorosas que nos lastiman mucho más. ¿Qué estás rechazando?",
+            "img": "major13.jpg"
+        },
+        {
+            "id": 14,
+            "name": "La Templanza",
+            "type": "major",
+            "description": "Este arcano está vinculado a actuar a partir del equilibrio, a cómo apaciguamos nuestras emociones desde de la intuición.",
+            "meaning_up": "Conectá con vos para equilibrar tus emociones, para fluir desde el amor y armonizar todo lo que te rodea. ¿Qué te gustaría mejorar?",
+            "meaning_rev": "No niegues la realidad con un exceso de positividad y confianza ciega, para cumplir tus deseos necesitás tener los pies en la tierra. ¿Cuál es tu foco?",
+            "img": "major14.jpg"
+        },
+        {
+            "id": 15,
+            "name": "El Diablo",
+            "type": "major",
+            "description": "Él nos propone ver de frente nuestros prejuicios e inhibiciones para integrar todo aquello que negamos en nosotros mismos.",
+            "meaning_up": "Destacá tus virtudes y abrazá tu creatividad para lograr lo que te propongas, no dudes de tu capacidad. ¿Cuál es tu miedo?",
+            "meaning_rev": "No te juzgues ni castigues, fortalecé tu confianza y autoestima para encarar todo lo que te propongas. ¿De qué sirve compararse?",
+            "img": "major15.jpg"
+        },
+        {
+            "id": 16,
+            "name": "La Torre",
+            "type": "major",
+            "description": "Este arcano nos llama a la apertura y liberación de todo lo que tenemos contenido dentro para lograr conectarnos con nuestros verdaderos deseos.",
+            "meaning_up": "Superá tus miedos, rompé los límites de las viejas estructuras limitantes que te desconectan de tu verdadera esencia. ¿De qué querés liberarte?",
+            "meaning_rev": "No te reprimas por miedo a lo desconocido o por no saber cómo lidiar con tus deseos, nada se resuelve desde la resistencia. ¿Qué te genera miedo?",
+            "img": "major16.jpg"
+        },
+        {
+            "id": 17,
+            "name": "La Estrella",
+            "type": "major",
+            "description": "La Estrella simboliza el equilibrio y nos invita a enfocar la energía en nuestros objetivos desde un lugar de seguridad.",
+            "meaning_up": "Quizás este sea un buen momento para reposar en tu seguridad y fluir en la estabilidad que tanto buscaste. ¿Qué te ayuda a fluir?",
+            "meaning_rev": "Establecé prioridades, no te enfoques en muchas cosas al mismo tiempo, el equilibrio es posible cuando nos vaciamos de nosotros mismos. ¿Qué drena tu energía hoy?",
+            "img": "major17.jpg"
+        },
+        {
+            "id": 18,
+            "name": "La Luna",
+            "type": "major",
+            "description": "La Luna nos conecta con nuestras emociones más profundas, nos llama a resignificar nuestro dolor y nuestros miedos, y nos invita a sanar nuestro árbol.",
+            "meaning_up": "Animate a sumergirte en ese mar interno de emociones para sanar viejas heridas que no te permiten ver más allá. ¿Qué esconden tus miedos?",
+            "meaning_rev": "Las limitaciones nacen con nosotros, las heredamos sin saber que están conectadas a nuestro linaje ancestral. ¿Podés reconocer el origen de tus relatos internos?",
+            "img": "major18.jpg"
+        },
+        {
+            "id": 19,
+            "name": "El Sol",
+            "type": "major",
+            "description": "El Sol nos conecta con la vitalidad, la energía y la vida. Su brillo nos alumbra a todos por igual desde su infinita abundancia.",
+            "meaning_up": "Disfrutá de los resultados de cada esfuerzo valorando tus cualidades y tu dedicación en cada paso del proceso. ¿Qué valoras hoy?",
+            "meaning_rev": "Buscá espacios que te aporten vitalidad, presta atención a la intensidad con la que emprendes cada objetivo. ¿Qué te está preocupando de más?",
+            "img": "major19.jpg"
+        },
+        {
+            "id": 20,
+            "name": "El Juicio",
+            "type": "major",
+            "description": "Este arcano nos llama a conectar con un mayor grado de conciencia rompiendo los límites que nos impiden trascender.",
+            "meaning_up": "Animate a conectar con tus creencias y expandir tus límites de consciencia para poder hallar tus propósitos. ¿Cómo te gustaría que te recuerden?",
+            "meaning_rev": "Abrí los ojos y permitite ver con total conciencia cuáles son las situaciones que requieren que actúes con madurez. ¿Qué brota de tu inconsciente?",
+            "img": "major20.jpg"
+        },
+        {
+            "id": 21,
+            "name": "El Mundo",
+            "type": "major",
+            "description": "Este arcano nos llama a la realización total partiendo del equilibrio espiritual, mental, material y emocional en nuestras vidas.",
+            "meaning_up": "No tengas miedo a iniciar o cerrar los ciclos que sean necesarios para lograr lo que te propongas. Nos perdemos para encontrarnos. ¿Sentís que se está cerrando un ciclo?",
+            "meaning_rev": "Más allá de las dificultades, todos merecemos realizar nuestros deseos, no te pierdas la oportunidad de expandirte sin intentarlo. ¿A qué te estás atando?",
+            "img": "major21.jpg"
+        },
+        {
+            "id": 22,
+            "name": "El Loco",
+            "type": "major",
+            "description": "Este arcano nos devela la necesidad de iniciar un nuevo camino a través de nuestros sentidos.",
+            "meaning_up": "Animate a conectar con tu inteligencia emocional para encontrar un camino evolutivo que te devuelva a tu propia esencia. ¿Qué estás buscando?",
+            "meaning_rev": "No pierdas tiempo dándole mil vueltas a una misma situación si te aparta de tu verdadera esencia. ¿Qué te gustaría concluir?",
+            "img": "major22.jpg"
+        },
+        {
+            "id": 23,
+            "name": "Rey de Bastos",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Todo está bajo control, puede que este sea un buen momento para que cumplas tus metas.",
+            "meaning_rev": "Construí desde el amor y la empatía teniendo en cuenta las necesidades de los que te rodean.",
+            "img": "clubs14.jpg"
+        },
+        {
+            "id": 24,
+            "name": "Reina de Bastos",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Confiá en tus habilidades para llevar adelante cualquier proyecto que te apasione.",
+            "meaning_rev": "Disfrutá de tus procesos y reconocé tus habilidades para no caer en la obsesión desmedida de obtener resultados.",
+            "img": "clubs13.jpg"
+        },
+        {
+            "id": 25,
+            "name": "Caballero de Bastos",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Podés cambiar tu realidad siempre que sientas la necesidad de sumar nuevas experiencias y transformar ideas.",
+            "meaning_rev": "No busques satisfacer todas tus necesidades desde el ego, alimentá tu espíritu para evolucionar.",
+            "img": "clubs12.jpg"
+        },
+        {
+            "id": 26,
+            "name": "Valet de Bastos",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Más allá de las dudas que surjan, puede que este sea un buen momento para trabajar con tu intuición y así poder iniciar el camino a la concreción de tus proyectos.",
+            "meaning_rev": "No actúes desde el impulso desmedido, podría destruir cualquier oportunidad.",
+            "img": "clubs11.jpg"
+        },
+        {
+            "id": 27,
+            "name": "10 de Bastos",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Animate a dar el paso que necesitas para emprender nuevos desafíos.",
+            "meaning_rev": "No te aferres a situaciones o emociones que no te ayuden a crecer.",
+            "img": "clubs10.jpg"
+        },
+        {
+            "id": 28,
+            "name": "9 de Bastos",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Aprendé a delegar para poder encontrar nuevos proyectos que te incentiven a probar otras cosas y te ayuden a cerrar etapas.",
+            "meaning_rev": "Sé responsable con tus procesos, actuá a conciencia siendo honestx con vos.",
+            "img": "clubs9.jpg"
+        },
+        {
+            "id": 29,
+            "name": "8 de Bastos",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Este es un momento propicio para el equilibrio, para descansar sobre tus logros y abrazar tu bienestar sin forzarte a cumplir exigencias de otros.",
+            "meaning_rev": "No te disperses intentando complacer las demandas externas, concentrate en todo lo que estás logrando.",
+            "img": "clubs8.jpg"
+        },
+        {
+            "id": 30,
+            "name": "7 de Bastos",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Este es un buen momento para reconocer cada esfuerzo que hiciste para conseguir lo que te hayas propuesto, sin dejar de agradecerles a quienes te hayan ayudado en el proceso.",
+            "meaning_rev": "No reprimas tus necesidades, animate a concretar lo que tanto deseas.",
+            "img": "clubs7.jpg"
+        },
+        {
+            "id": 31,
+            "name": "6 de Bastos",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Atrevete a buscar un canal expresivo que te permita fluir de manera sexual y creativa, no te cierres.",
+            "meaning_rev": "No te compares ni te midas con los logros de los demás, buscá la inspiración que te conecte con otras personas.",
+            "img": "clubs6.jpg"
+        },
+        {
+            "id": 32,
+            "name": "5 de Bastos",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Seguí avanzando, comprometete con tus deseos, cada persona decide su propio camino a través de sus necesidades.",
+            "meaning_rev": "Observa qué conductas te desestabilizan, amigate con los límites sanos para no caer en comportamientos obsesivos y adictivos.",
+            "img": "clubs5.jpg"
+        },
+        {
+            "id": 33,
+            "name": "4 de Bastos",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Que este momento estable, en donde la seguridad y la confianza te hacen sentir que todo marcha bien, no detenga tus ganas de seguir aprendiendo.",
+            "meaning_rev": "Alimentá tu entusiasmo, buscá el incentivo que te saque de la rutina. ¡No te estanques!",
+            "img": "clubs4.jpg"
+        },
+        {
+            "id": 34,
+            "name": "3 de Bastos",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Este es un buen momento para actuar y hacer real cualquier deseo que quieras concretar. ¡Impulsate!",
+            "meaning_rev": "No actúes precipitadamente, cualquier impulso abrupto podría destruir lo que tanto te costó construir.",
+            "img": "clubs3.jpg"
+        },
+        {
+            "id": 35,
+            "name": "2 de Bastos",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Tomate un tiempo para recargar energía antes de actuar.",
+            "meaning_rev": "No te anules intentando tener todo bajo control. Fluí con tus deseos.",
+            "img": "clubs2.jpg"
+        },
+        {
+            "id": 36,
+            "name": "As de Bastos",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Si estás pensando en iniciar un proyecto, quizá este sea un buen momento para darle forma.",
+            "meaning_rev": "Establecé un orden de prioridades para poder decidir con claridad qué deseás construir sin caer en la frustración y la ira.",
+            "img": "clubs1.jpg"
+        },
+        {
+            "id": 37,
+            "name": "Rey de Copas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Tu experiencia y sensibilidad te ayudan a demostrar afecto a través de tus acciones.",
+            "meaning_rev": "No busques un beneficio personal en todo lo que das, movete con honestidad.",
+            "img": "cups14.jpg"
+        },
+        {
+            "id": 38,
+            "name": "Reina de Copas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Entregate a tu capacidad de amar para transformar o materializar lo que desees experimentar.",
+            "meaning_rev": "Busca tu bienestar a través del amor y la pasión que te caracteriza. No te rindas.",
+            "img": "cups13.jpg"
+        },
+        {
+            "id": 39,
+            "name": "Caballero de Copas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Es hora de construir a partir de todas las experiencias vividas.",
+            "meaning_rev": "No utilices pretextos para escapar de un vínculo a menos que decidas enfocarte en tu crecimiento personal.",
+            "img": "cups12.jpg"
+        },
+        {
+            "id": 40,
+            "name": "Valet de Copas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Las dudas pueden ser una gran herramienta para el autoconocimiento, permitite dudar para encontrarte.",
+            "meaning_rev": "No te expongas a situaciones que puedan lastimarte, tomate tu tiempo para protegerte.",
+            "img": "cups11.jpg"
+        },
+        {
+            "id": 41,
+            "name": "10 de Copas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Este es un buen momento para concretar y ver realizada una experiencia afectiva. Los sentimientos se vuelven reales.",
+            "meaning_rev": "No te resistas al cambio, no te niegues a la posibilidad de encontrar un nuevo amor o darle un giro emocional a tu vida.",
+            "img": "cups10.jpg"
+        },
+        {
+            "id": 42,
+            "name": "9 de Copas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Esta despedida anuncia el inicio de una nueva etapa en tu vida, animate a dar paso a lo nuevo.",
+            "meaning_rev": "No te cierres contemplando el pasado, animate a avanzar más allá del dolor para darle inicio a una nueva etapa.",
+            "img": "cups9.jpg"
+        },
+        {
+            "id": 43,
+            "name": "8 de Copas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Disfrutá del amor y la armonía de sentirte bien con vos y con los demás.",
+            "meaning_rev": "No busques amor desde la insatisfacción, cultivá el amor propio para vincularte desde la abundancia.",
+            "img": "cups8.jpg"
+        },
+        {
+            "id": 44,
+            "name": "7 de Copas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "No tengas miedo de ofrecer tu ayuda y amor a los demás, tu generosidad puede conectarte con el amor universal.",
+            "meaning_rev": "Que tu sensibilidad no te quite la capacidad que tenés de ayudar a otros.",
+            "img": "cups7.jpg"
+        },
+        {
+            "id": 45,
+            "name": "6 de Copas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Este es un buen momento para conectar con vos, disfrutar de tu intimidad y placer, para luego integrarlo con otra persona.",
+            "meaning_rev": "No caigas en el narcisismo egoísta, no te aísles del vínculo afectivo, animate a compartir experiencias íntimas con otro.",
+            "img": "cups6.jpg"
+        },
+        {
+            "id": 46,
+            "name": "5 de Copas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Avanzá hacia nuevos caminos a través de tu entusiasmo para redescubrirte.",
+            "meaning_rev": "Poné los pies en la tierra para no perderte en ilusiones desmedidas que te desconecten de la realidad.",
+            "img": "cups5.jpg"
+        },
+        {
+            "id": 47,
+            "name": "4 de Copas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Consolidá tu seguridad afectiva para construir un lazo real que te permita pensar en proyectos a futuro.",
+            "meaning_rev": "No dejes de lado la pasión, evitá la rutina afectiva.",
+            "img": "cups4.jpg"
+        },
+        {
+            "id": 48,
+            "name": "3 de Copas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Disfrutá de este impulso emocional que te conecta con el amor.",
+            "meaning_rev": "Proyectá el amor sobre bases claras para no caer en la decepción.",
+            "img": "cups3.jpg"
+        },
+        {
+            "id": 49,
+            "name": "2 de Copas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Disfrutá de tus momentos en soledad, dejá que tus emociones sanen para volver a abrir el corazón.",
+            "meaning_rev": "No dejes que el miedo te cierre a la posibilidad de volver a confiar en el amor.",
+            "img": "cups2.jpg"
+        },
+        {
+            "id": 50,
+            "name": "As de Copas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Animate a abrir el corazón para iniciar un nuevo camino que te conecte con tus emociones.",
+            "meaning_rev": "No reprimas tus emociones, animate a conectar con las necesidades de tu alma.",
+            "img": "cups1.jpg"
+        },
+        {
+            "id": 51,
+            "name": "Rey de Espadas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Tus palabras tienen valor y ayudan a otros a resolver problemas y encontrar inspiración.",
+            "meaning_rev": "Tomá distancia de las situaciones injustas o poco cómodas que te afecten en lo emocional.",
+            "img": "swords14.jpg"
+        },
+        {
+            "id": 52,
+            "name": "Reina de Espadas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Confiá en tu intelecto para liderar cualquier proyecto que te propongas.",
+            "meaning_rev": "Defendé tus propósitos, no te distraigas con cosas que no te aporten valor.",
+            "img": "swords13.jpg"
+        },
+        {
+            "id": 53,
+            "name": "Caballero de Espadas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Compartí tus ideas para desarrollarlas y hacerlas crecer.",
+            "meaning_rev": "Tomate tu tiempo para reflexionar y decidir de manera prudente.",
+            "img": "swords12.jpg"
+        },
+        {
+            "id": 54,
+            "name": "Valet de Espadas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "No dudes de tus conocimientos, aclará tus ideas para poder expresarlas.",
+            "meaning_rev": "No calles tus miedos o tristezas por miedo a que te agredan, todo tiene solución.",
+            "img": "swords11.jpg"
+        },
+        {
+            "id": 55,
+            "name": "10 de Espadas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Salí de la soledad de tu mente, escuchar a otros puede mejorar tu forma de ver las cosas.",
+            "meaning_rev": "No te encierres en viejas estructuras, ampliá tu manera de pensar para no limitarte a vos y a los demás.",
+            "img": "swords10.jpg"
+        },
+        {
+            "id": 56,
+            "name": "9 de Espadas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Aprendé a observar tus creencias, tu identidad y tus necesidades para darle lugar al cambio.",
+            "meaning_rev": "No te quedes encerrado en tus ideas, animate a expresar tus emociones para no caer en una crisis a nivel mental.",
+            "img": "swords9.jpg"
+        },
+        {
+            "id": 57,
+            "name": "8 de Espadas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Aquietá tu mente, buscá el equilibrio intelectual para conectar con tu intuición.",
+            "meaning_rev": "No te cierres en tus propios pensamientos, evitá el bloqueo intelectual por el miedo a expresarte.",
+            "img": "swords8.jpg"
+        },
+        {
+            "id": 58,
+            "name": "7 de Espadas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Apoyate en tus conocimientos e intuición para accionar de manera objetiva.",
+            "meaning_rev": "Buscá la armonía y el consenso con los demás. No actúes en tu propio beneficio.",
+            "img": "swords7.jpg"
+        },
+        {
+            "id": 59,
+            "name": "6 de Espadas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Abrite al diálogo y al intercambio de ideas para estimularte y refinar tus pensamientos.",
+            "meaning_rev": "No busques el reconocimiento narcisista basado en la vanidad intelectual. Buscá profundidad.",
+            "img": "swords6.jpg"
+        },
+        {
+            "id": 60,
+            "name": "5 de Espadas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Apoyate en la claridad de tu mente para expresar tus ideas y buscar una mayor expansión intelectual.",
+            "meaning_rev": "Dale espacio a tu mente para evaluar nuevas oportunidades.",
+            "img": "swords5.jpg"
+        },
+        {
+            "id": 61,
+            "name": "4 de Espadas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Organizá tus ideas con claridad para alcanzar un estado de armonía y practicidad.",
+            "meaning_rev": "No caigas en la exigencia de cumplir con todas tus metas en poco tiempo, buscá momentos de esparcimiento.",
+            "img": "swords4.jpg"
+        },
+        {
+            "id": 62,
+            "name": "3 de Espadas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "No te precipites a la hora de transmitir tus ideas, dale lugar a la duda y aceptá lo que otros pueden enseñarte.",
+            "meaning_rev": "Medí tus palabras, no reacciones de manera intempestiva ya que puede afectar tu comunicación con los demás.",
+            "img": "swords3.jpg"
+        },
+        {
+            "id": 63,
+            "name": "2 de Espadas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Buscá la forma de expresar tus ideas y aplicar cada conocimiento, no te encierres en tus pensamientos.",
+            "meaning_rev": "No te llenes de pensamientos negativos, abrite a la comunicación para evitarte un caos mental.",
+            "img": "swords2.jpg"
+        },
+        {
+            "id": 64,
+            "name": "As de Espadas",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "No subestimes el poder de las ideas, animate a profundizarlas.",
+            "meaning_rev": "No descartes las ideas que aparezcan de manera repentina, pueden ayudarte a iniciar nuevos desafíos.",
+            "img": "swords1.jpg"
+        },
+        {
+            "id": 65,
+            "name": "Rey de Oros",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Partí de tu estabilidad económica para seguir ampliando tus horizontes materiales.",
+            "meaning_rev": "Hacé uso responsable del dinero, estudiá cada situación para no quebrar tu estabilidad.",
+            "img": "coins14.jpg"
+        },
+        {
+            "id": 66,
+            "name": "Reina de Oros",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Confiá en tu intuición para invertir en lo que necesites materializar haciendo uso responsable de tus recursos.",
+            "meaning_rev": "Estar tan pendiente del resultado no te permite ver y disfrutar el recorrido.",
+            "img": "coins13.jpg"
+        },
+        {
+            "id": 67,
+            "name": "Caballero de Oros",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Buscá mayor inspiración fuera de tu zona de confort para seguir creando.",
+            "meaning_rev": "No te aferres a tu estabilidad actual, animate a descubrir nuevas oportunidades para seguir creciendo.",
+            "img": "coins12.jpg"
+        },
+        {
+            "id": 68,
+            "name": "Valet de Oros",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Las experiencias se construyen a través de la experiencia, no tengas miedo a equivocarte.",
+            "meaning_rev": "Aunque el miedo al fracaso sea grande, animate a dar el salto y concretar tus deseos más allá del resultado.",
+            "img": "coins11.jpg"
+        },
+        {
+            "id": 69,
+            "name": "10 de Oros",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Se cierra una etapa de antiguas necesidades con vista a nuevas y mejores oportunidades.",
+            "meaning_rev": "No te quedes con la sensación de fracaso o angustia de las cosas que no hayan funcionado, animate a transformarlo en conocimiento para el futuro.",
+            "img": "coins10.jpg"
+        },
+        {
+            "id": 70,
+            "name": "9 de Oros",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Algo nuevo se avecina, prestá atención a lo que se pueda estar gestando.",
+            "meaning_rev": "No te angusties si las cosas no se resuelven tan pronto como lo imaginaste, seguramente algo esté mutando.",
+            "img": "coins9.jpg"
+        },
+        {
+            "id": 71,
+            "name": "8 de Oros",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Usá la experiencia que fuiste acumulando en diferentes proyectos para seguir trabajando de manera práctica y concisa.",
+            "meaning_rev": "No te sobre-exijas para alcanzar de inmediato una abundancia material o económica, todas las cosas llevan su tiempo.",
+            "img": "coins8.jpg"
+        },
+        {
+            "id": 72,
+            "name": "7 de Oros",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Actuá con firmeza para concretar lo que estás buscando, disfrutá de cada logro y de tu crecimiento.",
+            "meaning_rev": "Valorá tu crecimiento económico y aprendé a interpretar la abundancia.",
+            "img": "coins7.jpg"
+        },
+        {
+            "id": 73,
+            "name": "6 de Oros",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Este es un buen momento para ampliar tus gustos y depurar tus necesidades.",
+            "meaning_rev": "No te cierres a las nuevas experiencias, disfrutá de tus logros económicos.",
+            "img": "coins6.jpg"
+        },
+        {
+            "id": 74,
+            "name": "5 de Oros",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Aprovechá los obstáculos que atentan contra tu estabilidad para impulsarte a recibir los cambios que te presenten.",
+            "meaning_rev": "No te asustes, los cambios son necesarios para nuestra evolución, animate a construir desde una nueva realidad.",
+            "img": "coins5.jpg"
+        },
+        {
+            "id": 75,
+            "name": "4 de Oros",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Buscá nuevos desafíos partiendo de tu seguridad material para expandirte.",
+            "meaning_rev": "No te estanques en la comodidad, animate a innovar.",
+            "img": "coins4.jpg"
+        },
+        {
+            "id": 76,
+            "name": "3 de Oros",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Animate a dar el salto que te ayude a construir lo que esperás desde hace tiempo.",
+            "meaning_rev": "No te desanimes, usá tu energía para construir lo que tanto deseás.",
+            "img": "coins3.jpg"
+        },
+        {
+            "id": 77,
+            "name": "2 de Oros",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Este es un buen momento para acomodar tu economía y ahorrar para invertir en tu futuro.",
+            "meaning_rev": "No descuides tu economía mirando solo el presente, pensá en lo que te gustaría materializar a futuro.",
+            "img": "coins2.jpg"
+        },
+        {
+            "id": 78,
+            "name": "As de Oros",
+            "type": "minor",
+            "description": "",
+            "meaning_up": "Este es un buen momento para dejar de procrastinar y empezar a actuar.",
+            "meaning_rev": "Animate a materializar tus deseos dándole valor a tus necesidades.",
+            "img": "coins1.jpg"
+        }
+    ],
+    "_meta": {
+        "count": 78
+    }
+}
