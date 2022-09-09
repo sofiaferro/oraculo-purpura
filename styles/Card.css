@@ -26,7 +26,6 @@
   width: 300px;
   position: absolute;
   top: 25%;
-  left: 25%;
 }
 
 .name {
@@ -43,5 +42,4 @@
   width: 300px;
   position: absolute;
   top: 13em;
-  left: 25%;
 }
