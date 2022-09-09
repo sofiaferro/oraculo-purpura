@@ -22,7 +22,7 @@ const Message = (data, meaning, isFlipped) => {
   }, [animation && data]);
 
   return (
-    <div ref={container} className='container'>
+    <div ref={container} className='content'>
       <h4 className='name'>{data.isFlipped && data?.data?.name}</h4>
       <p className='message'>
         {data.isFlipped
