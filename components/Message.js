@@ -23,7 +23,7 @@ const Message = (data, meaning) => {
 
   return (
     <div ref={container} className='content'>
-      <h4 className='name'>{data.isFlipped && data?.data?.name}</h4>
+      <h5 className='name'>{data.isFlipped && data?.data?.name}</h5>
       <p className='message'>
         {data.isFlipped
           ? meaning === 'rev'
