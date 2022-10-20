@@ -9,7 +9,7 @@
   flex-direction: column;
   align-self: center;
   position: relative;
-  top: 13em;
+  top: 10em;
 }
   
 .card-container {
@@ -19,18 +19,20 @@
 }
   
 .card-img {
-  width: 190px;
+  width: 150px;
   border-radius: 10px;
 }
   
 .background {
-  width: 300px;
+  width: 250px;
   position: absolute;
+  align-self: center;
 }
 
 .name {
   font-size: 1.5em;
   font-family: 'MedievalSharp', cursive;
+  line-height: 0;
 }
 
 .message {
@@ -39,7 +41,8 @@
 }
 
 .react-card-flip {
-  width: 300px;
+  width: 250px;
   position: relative;
-  top: 13em;
+  top: 10em;
+  align-self: center;
 }

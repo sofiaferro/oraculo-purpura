@@ -17,12 +17,15 @@ function Card() {
     const orientation = Math.floor(Math.random() * 2);
     orientation === 0 ? setMeaning('up') : setMeaning('rev');
     setCard(data.cards[id]);
-    setIsFlipped(() => true);
   };
 
   const handleGetCard = () => {
     getCard();
+    setTimeout(()=>{
+      setIsFlipped(()=> true);
+    }, 1000)
   };
+  
   const handleBackToDeck = () => {
     setIsFlipped(() => false);
   };
@@ -33,7 +36,7 @@ function Card() {
 
   return (
     <div className='card-container'>
-      <img alt="" src="/img/oracle_alfa.png" className="background" />
+      <img alt="" src="/img/oracle_alfa_2.png" className="background" />
       <ReactCardFlip 
         isFlipped={isFlipped} 
         flipDirection='horizontal'

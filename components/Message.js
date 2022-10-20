@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Cafecito from './Cafecito';
 import { TweenMax } from 'gsap';
 
-const Message = (data, meaning, isFlipped) => {
+const Message = (data, meaning) => {
   // REFS
   const container = useRef(null);
 
