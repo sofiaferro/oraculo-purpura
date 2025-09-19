@@ -45,19 +45,6 @@ body {
   overscroll-behavior: none;
   -webkit-overflow-scrolling: touch;
 }
-
-/* Fix for mobile address bar hiding */
-@media screen and (max-width: 768px) {
-  .App {
-    min-height: 100vh;
-    min-height: calc(var(--vh, 1vh) * 100);
-  }
-  
-  .App-content {
-    min-height: 100vh;
-    min-height: calc(var(--vh, 1vh) * 100);
-  }
-}
   
 .background {
   width: 250px;

@@ -2,26 +2,8 @@ import Head from "next/head";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../styles/theme/theme";
 import Card from "../components/Card";
-import { useEffect } from "react";
 
 export default function Home() {
-  // Fix for mobile viewport height (address bar)
-  useEffect(() => {
-    const setVH = () => {
-      const vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    };
-    
-    setVH();
-    window.addEventListener('resize', setVH);
-    window.addEventListener('orientationchange', setVH);
-    
-    return () => {
-      window.removeEventListener('resize', setVH);
-      window.removeEventListener('orientationchange', setVH);
-    };
-  }, []);
-
   return (
     <>
       <Head>
