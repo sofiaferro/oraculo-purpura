@@ -6,24 +6,41 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* Fallback background color to prevent flicker */
-  background-color: #2a1810;
+  background-attachment: scroll;
+  background-color: #1A0E1A;
   /* Prevent mobile bounce scroll and blank areas */
   overscroll-behavior: none;
   min-height: 100vh;
+  /* Ensure background covers full scrollable area */
+  min-height: 100%;
 }
 
-/* Fix iOS background attachment issue */
-@supports (-webkit-touch-callout: none) {
-  body {
+/* Ensure html also has the background */
+html {
+  background-image: url(../public/img/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-color: #1A0E1A;
+  min-height: 100%;
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 768px) {
+  body, html {
     background-attachment: scroll;
+    background-size: cover;
+    background-position: center top;
+    /* Ensure no white/brown shows through */
+    background-color: #1A0E1A;
   }
 }
 
 .App {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
+  background: inherit;
 }
 
 .App-content {
@@ -31,6 +48,7 @@ body {
   flex-direction: column;
   align-items: center;
   color: #ffffff;
-  height: max-content;
+  min-height: 100vh;
   padding: 2em;
+  background: inherit;
 }

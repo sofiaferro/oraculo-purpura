@@ -13,9 +13,6 @@ export default function Home() {
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="theme-color" content="#2a1810" />
         <link rel="icon" href="favicon.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/>
-        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Open+Sans&display=swap" rel="stylesheet"/>
         {/* Preload background image to prevent flicker */}
         <link rel="preload" as="image" href="/img/background.png" />
       </Head>
