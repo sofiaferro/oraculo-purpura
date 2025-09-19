@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { ThemeProvider } from "@material-ui/core";
+import { ThemeProvider } from "@mui/material/styles";
 import theme from "../styles/theme/theme";
 import Card from "../components/Card";
 
@@ -10,7 +10,7 @@ export default function Home() {
         <title>Púrpura</title>
         <link rel="icon" href="favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/>
         <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Open+Sans&display=swap" rel="stylesheet"/>
       </Head>
       <div className="App">

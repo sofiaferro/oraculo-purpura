@@ -1,6 +1,7 @@
 
 .reversed {
   transform: rotate(180deg);
+  transition: transform 0.3s ease;
 }
 
 .content {
@@ -10,6 +11,7 @@
   align-self: center;
   position: relative;
   top: 10em;
+  opacity: 0; /* Start hidden */
 }
   
 .card-container {
@@ -21,6 +23,14 @@
 .card-img {
   width: 150px;
   border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  backface-visibility: hidden; /* Prevent flickering during transitions */
+  -webkit-backface-visibility: hidden;
+}
+
+.card-img:hover {
+  transform: scale(1.05);
 }
   
 .background {
@@ -46,4 +56,12 @@
   position: relative;
   top: 10em;
   align-self: center;
+  perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+/* Improve card flip transitions */
+.react-card-flipper {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
 }

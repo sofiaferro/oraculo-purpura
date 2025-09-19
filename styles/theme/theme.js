@@ -1,16 +1,17 @@
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createTheme } from '@mui/material/styles';
 
-const theme = createMuiTheme({
+const theme = createTheme({
     palette: {
         primary: {
             main: '#ab90b9',
-            label: '#fff'
         }
     },
-    overrides: {
+    components: {
         MuiButton: {
-            containedPrimary: {
-                color: '#fff',
+            styleOverrides: {
+                containedPrimary: {
+                    color: '#fff',
+                },
             },
         }
     }
