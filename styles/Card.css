@@ -27,10 +27,36 @@
   transition: transform 0.2s ease;
   backface-visibility: hidden; /* Prevent flickering during transitions */
   -webkit-backface-visibility: hidden;
+  /* Mobile touch improvements */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .card-img:hover {
   transform: scale(1.05);
+}
+
+/* Prevent mobile pull-to-refresh and overscroll */
+body {
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Fix for mobile address bar hiding */
+@media screen and (max-width: 768px) {
+  .App {
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+  }
+  
+  .App-content {
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+  }
 }
   
 .background {

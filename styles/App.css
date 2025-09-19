@@ -1,13 +1,34 @@
-body {
+html, body {
   padding: 0;
   margin: 0;
   border: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
   background-image: url(../public/img/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keep background fixed during scroll */
+  /* Fallback background color to prevent flicker */
+  background-color: #2a1810;
+}
+
+/* Fix mobile viewport issues */
+@supports (-webkit-touch-callout: none) {
+  body {
+    background-attachment: scroll; /* iOS doesn't support fixed properly */
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
 }
 
 .App {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available; /* iOS viewport fix */
+  position: relative;
+  width: 100%;
 }
 
 .App-content {
@@ -15,6 +36,40 @@ body {
   flex-direction: column;
   align-items: center;
   color: #ffffff;
-  height: max-content;
-  padding: 2em;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  padding: 2em 1em; /* Better mobile padding */
+  box-sizing: border-box;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Prevent content flash on load */
+.App-content.loading {
+  opacity: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App-content {
+    padding: 1em 0.5em;
+  }
+  
+  .content {
+    width: 90%;
+    max-width: 300px;
+  }
+  
+  .react-card-flip {
+    width: 200px;
+  }
+  
+  .card-img {
+    width: 120px;
+  }
+  
+  .background {
+    width: 200px;
+  }
 }

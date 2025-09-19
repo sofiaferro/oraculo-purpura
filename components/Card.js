@@ -13,6 +13,7 @@ function Card() {
   const [nextCard, setNextCard] = useState({});
   const [nextMeaning, setNextMeaning] = useState('');
   const [imagesPreloaded, setImagesPreloaded] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   
   // PRELOAD ALL CARD IMAGES
   useEffect(() => {
@@ -31,10 +32,13 @@ function Card() {
         setImagesPreloaded(true);
         // Prepare the first card
         prepareNextCard();
+        // Add small delay to ensure smooth transition
+        setTimeout(() => setIsLoading(false), 300);
       } catch (error) {
         console.error('Error preloading images:', error);
         setImagesPreloaded(true); // Continue even if some images fail
         prepareNextCard();
+        setTimeout(() => setIsLoading(false), 300);
       }
     };
     
@@ -86,7 +90,7 @@ function Card() {
   const imgClass = 'card-img';
 
   return (
-    <div className='card-container'>
+    <div className='card-container' style={{ opacity: isLoading ? 0 : 1, transition: 'opacity 0.3s ease-in-out' }}>
       <img alt="" src="/img/oracle_alfa_2.png" className="background" />
       <ReactCardFlip 
         isFlipped={isFlipped} 
