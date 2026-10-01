@@ -89,50 +89,62 @@ function Card() {
   const imgSrc = card?.img ? `/img/cards/${card.img}` : '';
   const imgClass = 'card-img';
 
+  const onKey = (handler) => (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      handler();
+    }
+  };
+
   return (
     <div className='card-container' style={{ opacity: isLoading ? 0 : 1, transition: 'opacity 0.3s ease-in-out' }}>
-      <img alt="" src="/img/oracle_alfa_2.png" className="background" />
-      <ReactCardFlip 
-        isFlipped={isFlipped} 
-        flipDirection='horizontal'
-      >
-        <img
-          alt=''
-          src={'/img/back.jpg'}
-          className='card-img'
-          onClick={handleGetCard}
-        />
-        {imgSrc ? (
-          <img
-            alt={card?.name || ''}
-            src={imgSrc}
-            className={imgClass}
-            onClick={handleBackToDeck}
-            style={{
-              transform: meaning === 'rev' ? 'rotate(180deg)' : 'none',
-              transition: 'transform 0.3s ease'
-            }}
-          />
-        ) : (
-          <div 
-            className='card-img' 
-            style={{ 
-              backgroundColor: '#ab90b9', 
-              display: 'flex', 
-              alignItems: 'center', 
-              justifyContent: 'center', 
-              color: 'white',
-              height: '260px' // Match typical card aspect ratio
-            }}
-            onClick={handleBackToDeck}
+      <div className='oracle'>
+        <img alt="Oráculo Púrpura" src="/img/oracle_alfa_2.png" className="background" />
+        <div className='deck'>
+          <ReactCardFlip
+            isFlipped={isFlipped}
+            flipDirection='horizontal'
           >
-            Loading...
-          </div>
-        )}
-      </ReactCardFlip>
-      <Message 
-        isFlipped={isFlipped} 
-        data={card} 
+            <img
+              alt='Mazo: tocá para sacar una carta'
+              src={'/img/back.jpg'}
+              className='card-img'
+              role='button'
+              tabIndex={isFlipped ? -1 : 0}
+              onClick={handleGetCard}
+              onKeyDown={onKey(handleGetCard)}
+            />
+            {imgSrc ? (
+              <img
+                alt={card?.name || ''}
+                src={imgSrc}
+                className={imgClass}
+                role='button'
+                tabIndex={isFlipped ? 0 : -1}
+                onClick={handleBackToDeck}
+                onKeyDown={onKey(handleBackToDeck)}
+                style={{
+                  transform: meaning === 'rev' ? 'rotate(180deg)' : 'none',
+                  transition: 'transform 0.3s ease'
+                }}
+              />
+            ) : (
+              <div
+                className='card-img card-placeholder'
+                onClick={handleBackToDeck}
+              >
+                Loading...
+              </div>
+            )}
+          </ReactCardFlip>
+        </div>
+        <p className='hint' style={{ opacity: isFlipped ? 0 : 1 }} aria-hidden={isFlipped}>
+          Pensá en tu pregunta y tocá la carta
+        </p>
+      </div>
+      <Message
+        isFlipped={isFlipped}
+        data={card}
         meaning={meaning}
        />
     </div>

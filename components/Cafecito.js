@@ -1,6 +1,6 @@
 function Cafecito() {
   return (
-    <div style={{ paddingBottom: "50px" }}>
+    <div className="cafecito">
       <a
         href="https://cafecito.app/sofiaferro"
         rel="noreferrer"

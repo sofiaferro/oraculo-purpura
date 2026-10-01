@@ -35,10 +35,11 @@ const Message = ({ isFlipped, data, meaning }) => {
 
   return (
     <div ref={container} className='content' style={{ opacity: 0 }}>
-      <h5 className='name'>{data.name}</h5>
+      <h2 className='name'>{data.name}</h2>
       <p className='message'>
         {meaning === 'rev' ? data.meaning_rev : data.meaning_up}
       </p>
+      <p className='back-hint'>Tocá la carta para volver al mazo</p>
       <footer className='footer'><Cafecito /></footer>
     </div>
   );
